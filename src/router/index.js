@@ -17,14 +17,20 @@ const routes = [
     path: '/judge',
     name: 'Judge',
     component: () => import('@/views/home/Judge.vue')
-  }, {
+  },
+  {
     path: '/flowquery',
     component: () => import('@/views/home/FlowQuery.vue'),
     children: [{
       path: '/flowquery/flowqueryPopup',
       component: () => import('@/views/home/components/FlowQueryPopup.vue')
     }]
-  }, {
+  },
+  {
+    path: '/flowquerymap',
+    component: () => import('@/views/home/FlowQueryMap.vue')
+  },
+  {
     path: '/category',
     component: () => import('@/views/home/Category.vue')
   }, {

@@ -3,6 +3,9 @@
     <img src="~@/assets/Icon/search.png" alt="" class="left-icon" />
     <input placeholder="| 请扫描或输入UDI" />
     <img src="~@/assets/Icon/bell.png" alt="" class="right-icon" />
+    <button class="search-btn" @click="$router.push('/flowquerymap')">
+      搜索
+    </button>
   </div>
 </template>
 <script>
@@ -36,7 +39,15 @@ export default {
   .right-icon {
     z-index: 999;
     position: absolute;
+    right: 0.85rem;
+  }
+  .search-btn {
+    z-index: 999;
+    position: absolute;
+    color: white;
+    background-color: #0fbda6;
     right: 0.35rem;
+    border-radius: 1rem;
   }
 }
 </style>
